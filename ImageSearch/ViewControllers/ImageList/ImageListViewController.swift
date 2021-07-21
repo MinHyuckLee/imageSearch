@@ -50,7 +50,7 @@ final class ImageListViewController: UIViewController {
     private func setImageListView() {
         imageListView.collectionView.delegate = self
         imageListView.collectionView.dataSource = self
-        imageListView.collectionView.register(SearchImageCell.self, forCellWithReuseIdentifier: imageListView.cellId)
+        imageListView.collectionView.register(ImageListCell.self, forCellWithReuseIdentifier: imageListView.cellId)
         imageListView.translatesAutoresizingMaskIntoConstraints = false
     }
 
@@ -78,7 +78,7 @@ extension ImageListViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: imageListView.cellId,
-                                                            for: indexPath) as? SearchImageCell else {
+                                                            for: indexPath) as? ImageListCell else {
             return UICollectionViewCell()
         }
         let source = URL(string: viewModel.searchImages?.documents[indexPath.item].thumbnail_url ?? "")

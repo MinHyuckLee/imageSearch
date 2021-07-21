@@ -28,11 +28,11 @@
 		390AD3F826A550350068781B /* ImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390AD3F726A550350068781B /* ImageListViewModel.swift */; };
 		390AD3FA26A551B50068781B /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390AD3F926A551B50068781B /* ImageListView.swift */; };
 		390AD3FD26A558E30068781B /* SearchImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390AD3FC26A558E30068781B /* SearchImage.swift */; };
-		390AD40026A5633F0068781B /* SearchImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390AD3FF26A5633F0068781B /* SearchImageCell.swift */; };
 		390AD40226A576C40068781B /* FullScreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390AD40126A576C40068781B /* FullScreenImageView.swift */; };
 		390AD40426A579460068781B /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390AD40326A579460068781B /* FullScreenViewController.swift */; };
 		390AD40626A57A800068781B /* FullScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390AD40526A57A800068781B /* FullScreenCoordinator.swift */; };
 		390AD40826A57EE30068781B /* FullScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390AD40726A57EE30068781B /* FullScreenViewModel.swift */; };
+		39CBD9FA26A82AEE00804159 /* ImageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CBD9F926A82AEE00804159 /* ImageListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,11 +78,11 @@
 		390AD3F726A550350068781B /* ImageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewModel.swift; sourceTree = "<group>"; };
 		390AD3F926A551B50068781B /* ImageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListView.swift; sourceTree = "<group>"; };
 		390AD3FC26A558E30068781B /* SearchImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImage.swift; sourceTree = "<group>"; };
-		390AD3FF26A5633F0068781B /* SearchImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageCell.swift; sourceTree = "<group>"; };
 		390AD40126A576C40068781B /* FullScreenImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageView.swift; sourceTree = "<group>"; };
 		390AD40326A579460068781B /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
 		390AD40526A57A800068781B /* FullScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCoordinator.swift; sourceTree = "<group>"; };
 		390AD40726A57EE30068781B /* FullScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewModel.swift; sourceTree = "<group>"; };
+		39CBD9F926A82AEE00804159 /* ImageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +142,8 @@
 				390AD3EA26A51F040068781B /* ViewControllers */,
 				390AD3ED26A527290068781B /* Views */,
 				390AD3FB26A558C70068781B /* Models */,
-				390AD3DF26A5169A0068781B /* Network.swift */,
-				390AD3E426A51C170068781B /* Protocols.swift */,
+				39CBD9EE26A829C500804159 /* Network */,
+				39CBD9EF26A829CF00804159 /* Utilities */,
 				390AD3B226A514730068781B /* Assets.xcassets */,
 				390AD3B426A514730068781B /* LaunchScreen.storyboard */,
 				390AD3B726A514730068781B /* Info.plist */,
@@ -173,9 +173,9 @@
 			isa = PBXGroup;
 			children = (
 				390AD3E226A51B690068781B /* AppCoordinator.swift */,
-				390AD3E826A51D890068781B /* SearchHomeCoordinator.swift */,
-				390AD3F026A54B560068781B /* ImageListCoordinator.swift */,
-				390AD40526A57A800068781B /* FullScreenCoordinator.swift */,
+				39CBD9F326A82A2B00804159 /* Search */,
+				39CBD9F426A82A3400804159 /* ImageList */,
+				39CBD9F526A82A3C00804159 /* FullScreen */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -183,10 +183,9 @@
 		390AD3EA26A51F040068781B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				390AD3E626A51D5B0068781B /* SearchHomeViewController.swift */,
-				390AD3EB26A526CC0068781B /* SearchResultViewController.swift */,
-				390AD3F226A54C340068781B /* ImageListViewController.swift */,
-				390AD40326A579460068781B /* FullScreenViewController.swift */,
+				39CBD9F626A82A4F00804159 /* Search */,
+				39CBD9F726A82A5F00804159 /* ImageList */,
+				39CBD9F826A82A6900804159 /* FullScreen */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -194,8 +193,9 @@
 		390AD3ED26A527290068781B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				390AD3EE26A5277B0068781B /* SearchResultView.swift */,
-				390AD3FE26A563150068781B /* SearchImages */,
+				39CBD9FB26A82B1900804159 /* Search */,
+				39CBD9FC26A82B2500804159 /* ImageList */,
+				39CBD9FD26A82B4300804159 /* FullScreen */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,9 +203,9 @@
 		390AD3F426A54E250068781B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				390AD3F526A54E410068781B /* SearchHomeViewModel.swift */,
-				390AD3F726A550350068781B /* ImageListViewModel.swift */,
-				390AD40726A57EE30068781B /* FullScreenViewModel.swift */,
+				39CBD9F026A82A0400804159 /* Search */,
+				39CBD9F126A82A0F00804159 /* ImageList */,
+				39CBD9F226A82A2000804159 /* FullScreen */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -213,19 +213,131 @@
 		390AD3FB26A558C70068781B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				390AD3FC26A558E30068781B /* SearchImage.swift */,
+				39CBD9FE26A82B8900804159 /* ImageList */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		390AD3FE26A563150068781B /* SearchImages */ = {
+		39CBD9EE26A829C500804159 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				390AD3DF26A5169A0068781B /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		39CBD9EF26A829CF00804159 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				390AD3E426A51C170068781B /* Protocols.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		39CBD9F026A82A0400804159 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				390AD3F526A54E410068781B /* SearchHomeViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		39CBD9F126A82A0F00804159 /* ImageList */ = {
+			isa = PBXGroup;
+			children = (
+				390AD3F726A550350068781B /* ImageListViewModel.swift */,
+			);
+			path = ImageList;
+			sourceTree = "<group>";
+		};
+		39CBD9F226A82A2000804159 /* FullScreen */ = {
+			isa = PBXGroup;
+			children = (
+				390AD40726A57EE30068781B /* FullScreenViewModel.swift */,
+			);
+			path = FullScreen;
+			sourceTree = "<group>";
+		};
+		39CBD9F326A82A2B00804159 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				390AD3E826A51D890068781B /* SearchHomeCoordinator.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		39CBD9F426A82A3400804159 /* ImageList */ = {
+			isa = PBXGroup;
+			children = (
+				390AD3F026A54B560068781B /* ImageListCoordinator.swift */,
+			);
+			path = ImageList;
+			sourceTree = "<group>";
+		};
+		39CBD9F526A82A3C00804159 /* FullScreen */ = {
+			isa = PBXGroup;
+			children = (
+				390AD40526A57A800068781B /* FullScreenCoordinator.swift */,
+			);
+			path = FullScreen;
+			sourceTree = "<group>";
+		};
+		39CBD9F626A82A4F00804159 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				390AD3E626A51D5B0068781B /* SearchHomeViewController.swift */,
+				390AD3EB26A526CC0068781B /* SearchResultViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		39CBD9F726A82A5F00804159 /* ImageList */ = {
+			isa = PBXGroup;
+			children = (
+				390AD3F226A54C340068781B /* ImageListViewController.swift */,
+			);
+			path = ImageList;
+			sourceTree = "<group>";
+		};
+		39CBD9F826A82A6900804159 /* FullScreen */ = {
+			isa = PBXGroup;
+			children = (
+				390AD40326A579460068781B /* FullScreenViewController.swift */,
+			);
+			path = FullScreen;
+			sourceTree = "<group>";
+		};
+		39CBD9FB26A82B1900804159 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				390AD3EE26A5277B0068781B /* SearchResultView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		39CBD9FC26A82B2500804159 /* ImageList */ = {
 			isa = PBXGroup;
 			children = (
 				390AD3F926A551B50068781B /* ImageListView.swift */,
-				390AD3FF26A5633F0068781B /* SearchImageCell.swift */,
+				39CBD9F926A82AEE00804159 /* ImageListCell.swift */,
+			);
+			path = ImageList;
+			sourceTree = "<group>";
+		};
+		39CBD9FD26A82B4300804159 /* FullScreen */ = {
+			isa = PBXGroup;
+			children = (
 				390AD40126A576C40068781B /* FullScreenImageView.swift */,
 			);
-			path = SearchImages;
+			path = FullScreen;
+			sourceTree = "<group>";
+		};
+		39CBD9FE26A82B8900804159 /* ImageList */ = {
+			isa = PBXGroup;
+			children = (
+				390AD3FC26A558E30068781B /* SearchImage.swift */,
+			);
+			path = ImageList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,12 +484,12 @@
 				390AD3F126A54B560068781B /* ImageListCoordinator.swift in Sources */,
 				390AD40426A579460068781B /* FullScreenViewController.swift in Sources */,
 				390AD3E926A51D890068781B /* SearchHomeCoordinator.swift in Sources */,
+				39CBD9FA26A82AEE00804159 /* ImageListCell.swift in Sources */,
 				390AD3AA26A514720068781B /* AppDelegate.swift in Sources */,
 				390AD3E326A51B690068781B /* AppCoordinator.swift in Sources */,
 				390AD3E726A51D5B0068781B /* SearchHomeViewController.swift in Sources */,
 				390AD3E526A51C170068781B /* Protocols.swift in Sources */,
 				390AD40626A57A800068781B /* FullScreenCoordinator.swift in Sources */,
-				390AD40026A5633F0068781B /* SearchImageCell.swift in Sources */,
 				390AD3E026A5169A0068781B /* Network.swift in Sources */,
 				390AD3EC26A526CC0068781B /* SearchResultViewController.swift in Sources */,
 				390AD3FA26A551B50068781B /* ImageListView.swift in Sources */,

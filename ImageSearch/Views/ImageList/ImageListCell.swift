@@ -1,13 +1,13 @@
 //
-//  SearchImageCell.swift
+//  ImageListCell.swift
 //  ImageSearch
 //
-//  Created by Min on 2021/07/19.
+//  Created by Min on 2021/07/21.
 //
 
 import UIKit
 
-final class SearchImageCell: UICollectionViewCell {
+final class ImageListCell: UICollectionViewCell {
 
     let searchImageView: UIImageView = {
         let imageView = UIImageView()
@@ -42,3 +42,4 @@ final class SearchImageCell: UICollectionViewCell {
         searchImageView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
     }
 }
+
